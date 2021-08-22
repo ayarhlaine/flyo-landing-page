@@ -1,5 +1,32 @@
 .header {
-    
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        &__links {
+            display: flex;
+            gap: 0rem 3rem;
+        }
+        &__link {
+            color: $very-dark-blue;
+        }
+    }
+    &__content {
+        display: flex;
+        &__text{
+            flex: 1;
+        }
+        &__image{
+            flex: 1;
+            min-height: 30rem;
+            background-image: url(../../images/illustration-1.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+    }
 }
 
 // Responsive
