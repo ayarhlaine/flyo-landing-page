@@ -8,7 +8,7 @@
 
 .section1 {
     display: flex;
-    background-color: $light-grayish-blue;
+    background-color: rgba($light-grayish-blue, 0.8);
     &__text {
         flex: 1;
     }
@@ -18,12 +18,12 @@
         background-image: url(../../images/illustration-2.svg);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
     }
 }
 .section2 {
     display: flex;
-    background-color: $very-dark-blue;
+    background-color: $desaturated-blue;
     &__left {
         flex: 1;
     }
