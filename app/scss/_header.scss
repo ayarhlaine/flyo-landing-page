@@ -11,6 +11,17 @@
         }
         &__link {
             color: $very-dark-blue;
+            &:hover::after{
+                width: 100%;
+            }
+            &::after{
+                content: '';
+                display: block;
+                width: 0;
+                height: 3px;
+                background: $desaturated-blue;
+                transition: width .3s;
+            }
         }
     }
     &__content {
@@ -23,13 +34,14 @@
         }
         &__title {
             color: $very-dark-blue;
-            font-weight: 400;
+            font-size: 2.5rem;
             font-weight: bold;
-            width: 80%;
+            width: 90%;
         }
         &__description {
             width: 80%;
             color: $desaturated-blue;
+            letter-spacing: 1px;
         }
         &__image{
             flex: 1;
@@ -39,6 +51,9 @@
             background-position: center;
             background-size: contain;
         }
+    }
+    .input1 {
+        width: calc(50%);
     }
 }
 
