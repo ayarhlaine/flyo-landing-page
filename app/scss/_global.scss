@@ -9,6 +9,40 @@
     min-width: 10rem;
 }
 
+.link__button {
+    color: $moderate-cyan;
+    border-bottom: 1px solid $moderate-cyan;
+    padding: 0.5rem 0rem;
+    position: relative;
+}
+
+.link__button__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-25%);
+}
+
+.card {
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
 .input {
     min-height: 2rem;
+}
+
+.title {
+    color: $very-dark-blue;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.description {
+    color: $desaturated-blue;
 }
